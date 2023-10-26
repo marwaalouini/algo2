@@ -1,0 +1,20 @@
+ALGORITHM Dot_product
+
+PROCEDURE Dot_product(V1 V2)
+
+VAR
+ Ps= V1 * V2
+ V1 array of INTEGER
+ V2 array of INTEGER
+ IR :array of INTEGER
+BEGIN
+    write{" presentation the vector product ortogonal"}
+    read( s)
+
+FOR i FROM 0 TO length STEP 1  DO
+    set_instructions
+END_FOR
+    IF (V1*V2=0) THEN
+        IR
+    END_IF
+END

@@ -1,0 +1,62 @@
+ALGORITHM somme-element
+VAR
+  T1: array of INTEGER 
+  T2 : array of INTEGER
+  i: INTEGER
+  j: INTEGER
+  somme:INTEGER:0;
+BEGIN
+s := false
+        write("sum of distinct")
+        read(s)
+            FOR i FROM 1 TO length STEP 1  DO
+        write( entrée d element)
+        read ( T1[i])
+
+            END_FOR
+
+        FOR j FROM 1 TO length STEP 1  DO
+            write( entrée d element)
+            read( T2[j])
+        END_FOR
+
+        FOR i FROM 1 TO  T1.length STEP 1  DO
+        FOR j FROM 0 TO T2.length STEP 1  DO
+
+            IF (T1[i] = T2[j]) THEN
+                s:= true
+            END_IF
+
+        
+             IF (T1[i]<> T2[j]) THEN
+                sommme := somme+t1[i]
+
+              END_IF   
+        END_FOR
+
+        END_FOR
+
+
+        FOR j FROM 0 TO T2.length STEP 1  DO
+        FOR i FROM 0 TO  T1.length STEP 1  DO
+        
+        IF (T2[j]= T1[i]) THEN
+            s:=true
+
+END_IF
+
+IF (T2[J]<>t1[i]) THEN
+    somme:= somme + t2[j]
+END_IF
+
+
+        END_IF
+
+
+     END_FOR
+
+     write("write the somme of distinct",somme)      
+          
+
+
+END
