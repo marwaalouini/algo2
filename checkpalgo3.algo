@@ -1,0 +1,14 @@
+ALGORITHM insert sort
+VAR
+    array of INTEGER
+    i, j  : INTEGER
+BEGIN
+    FOR i FROM 0 TO length -1 STEP 1  DO
+        for j = i+1 and j > 0 STEP -1 DO
+        IF (arr[j] < arr[j-1]) THEN
+                temps := arr [j]
+                arr[j] := arr[j-1]
+                arr [j-1] := temps
+         END_IF
+    END_FOR
+END
