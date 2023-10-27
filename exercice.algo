@@ -1,0 +1,15 @@
+FUNCTION palindrome(i= STRING) : BOOLEAN
+VAR
+    result= STRING
+BEGIN
+  
+
+  IF ( str = 0) THEN
+  result= false
+  ELSE IF (str[i] = str[i-1] && str = 1) THEN
+    result= true
+  END_IF
+
+RETURN result
+
+END
